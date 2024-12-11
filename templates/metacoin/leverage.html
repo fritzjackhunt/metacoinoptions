@@ -1,0 +1,118 @@
+{% extends 'metacoin/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+
+<section id="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-12">
+                <br><br>
+                <h2 class="boold">LEVERAGE</h2>
+            </div>
+            <div class="col-lg-12 col-12">
+                <br>
+                <p>Leverage is the use of various financial instruments or borrowed capital, such as margin, to increase the potential return of an investment. Prior to exploring leverage and how it used in trading with Meta Coin Options, please carefully read the following Risk Warning on Leverage:</p>
+
+                <p>LEVERAGE AMPLIFIES POTENTIAL LOSSES OR GAINS. WITHOUT PROPER USE OF RISK MANAGEMENT, THE HIGH DEGREE OF LEVERAGE MAY LEAD TO LARGE LOSSES. Meta Coin Options offers variable levels of leverage depending upon account balance.</p>
+            </div>
+            <div class="col-lg-6 col-12">
+                <br>
+                <table style="width:100%">
+                    <tr>
+                        <td>ACCOUNT BALANCE</td>
+                        <td>USD 100</td>
+                        <td>USD 5,000</td>
+                        <td>USD 10,000</td>
+                    </tr>
+                    <tr>
+                        <td>MAXIMUM LEVERAGE</td>
+                        <td>1:500</td>
+                        <td>1:200</td>
+                        <td>1:100</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-lg-12 col-12">
+                <br><br>
+                <p>Leverage on Metal products is always fixed at 1:100</p>
+
+                <p><strong>Advantage of lower leverage?</strong></p>
+
+                <p>When you use excessive leverage, a few losing trades can quickly offset many winning trades. To clearly see how this can happen, consider the following example.</p>
+
+                <p><strong>Scenario: </strong>Trader A buys 50 lots of USD/JPY while Trader B buys 5 lots of USD/JPY.</p>
+
+                <p><strong>Questions: </strong>What happens to Trader A and Trader B account equity when the USD/JPY price falls 100 pips against them?</p>
+
+                <p><strong>Answer: </strong>Trader A loses 41.5% and Trader B loses 4.15% of their account equity.</p>
+
+                <p><strong>Example:</strong></p>
+            </div>
+            <div class="col-lg-12 col-12">
+                <br>
+                <table style="width:100%">
+                    <tr>
+                        <td></td>
+                        <td>TRADER A</td>
+                        <td>TRADER B</td>
+                    </tr>
+                    <tr>
+                        <td>Account Equality</td>
+                        <td>USD 10,000</td>
+                        <td>USD 10,000</td>
+                    </tr>
+                    <tr>
+                        <td>National Lot Size</td>
+                        <td>$500,000 (Buys 50, 10k lots)</td>
+                        <td>$500,000 (Buys 50, 10k lots)</td>
+                    </tr>
+                    <tr>
+                        <td>Leverage Used</td>
+                        <td>50:1 (50 Times)</td>
+                        <td>50:1 (50 Times)</td>
+                    </tr>
+                    <tr>
+                        <td>100 Pip Loss in Dollars</td>
+                        <td>($4,150)</td>
+                        <td>($415)</td>
+                    </tr>
+                    <tr>
+                        <td>% Loss Of Equality</td>
+                        <td>41.50%</td>
+                        <td>4.15%</td>
+                    </tr>
+                    <tr>
+                        <td>% of Equity Remaining%</td>
+                        <td>58.50%</td>
+                        <td>95.85%</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-lg-12 col-12">
+                <br><br>
+                <p>By using lower leverage, Trader B drastically reduces the dollar drawdown of a 100 pip loss.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

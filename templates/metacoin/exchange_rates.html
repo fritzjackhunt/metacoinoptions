@@ -1,0 +1,103 @@
+{% extends 'metacoin/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section id="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-12">
+                <br><br>
+                <h2 class="boold">EXCHANGE RATES &amp; QUOTATION</h2>
+            </div>
+            <div class="col-lg-12 col-12">
+                <br>
+                <p><strong>Lesson 2 – Foreign Exchange Rates and Quotation Methods </strong></p>
+            </div>
+            <div class="col-lg-12 col-12">
+                <ol>
+                    <li><strong>Concept of Foreign Exchange Rate</strong>
+
+                    <br>
+
+                    <p>We have an expert understanding of domestic trading. When you are in Germany and you buy rice from a shop, you will naturally pay in Euros, and of course, the shop will be willing to accept Euros. This trade can be conducted in Euros. Trading of goods within a country is relatively simple.</p>
+
+                    <p>However, things get complicated if you want to buy a US-made computer. You might have paid in Euros at the shop. However, through transactions in banks and financial institutions, the final payment will be made in US dollars and not Euros. Similarly, when Americans want to buy German products, they will have to eventually pay in Euros.</p>
+
+                    <p>From this example of international trading, we introduce the concept of foreign exchange rate. Foreign exchange rate is the value at which a country’s currency unit is exchanged for another country’s currency unit. For example, the current foreign exchange rate for Euros is: 100 EUR = USD 130.</p>
+
+                    </li>
+
+                    <li><strong>World Currency Symbols</strong>
+                        <ul>
+                            <li>USD : US Dollar</li>
+                            <li>HKD : Hong Kong Dollar</li>
+                            <li>EUR : Euro</li>
+                            <li>JPY : Japanese Yen</li>
+                            <li>GBP : British Pound</li>
+                            <li>CHF : Swiss Franc</li>
+                            <li>CAD : Canadian Dollar</li>
+                            <li>AUD : Australian Dollar</li>
+                        </ul>
+                    </li>
+
+                    <br>
+
+                    <li><strong>Methods of Quoting Foreign Exchange Rates</strong>
+
+                    <br>
+
+                    <p>Currently, domestic banks will determine their exchange rates based on international financial markets. There are two common ways to quote exchange rates, direct and indirect quotation.</p>
+
+                    <p>Direct quotation: This is also known as price quotation. The exchange rate of the domestic currency is expressed as equivalent to a certain number of units of a foreign currency. It is usually expressed as the amount of domestic currency that can be exchanged for 1 unit or 100 units of a foreign currency. The more valuable the domestic currency, the smaller the amount of domestic currency needed to exchange for a foreign currency unit and this gives a lower exchange rate. When the domestic currency becomes less valuable, a greater amount is needed to exchange for a foreign currency unit and the exchange rate becomes higher.</p>
+
+                    <p>Under the direct quotation, the variations of the exchange rates are inversely related to the changes in the value of the domestic currency. When the value of the domestic currency rises, the exchange rates fall; and when the value of the domestic currency falls, the exchange rates rise. Most countries uses direct quotation. Most of the exchange rates in the market such as USD/JPY, USD/HKD and USD/RMD are also quoted using direct quotation.</p>
+
+                    <p>Indirect quotation: This is also known as the quantity quotation. The exchange rate of a foreign currency is expressed as equivalent to a certain number of units of the domestic currency. This is usually expressed as the amount of foreign currency needed to exchange for 1 unit or 100 units of domestic currency. The more valuable the domestic currency, the greater the amount of foreign currency it can exchange for and the lower the exchange rate. When the domestic currency becomes less valuable, it can exchange for a smaller amount of foreign currency and the exchange rate drops.</p>
+
+                    <p>Under indirect quotation, the rise and fall of exchange rates are directly related to the changes in value of the domestic currency. When the value of the domestic currency rises, the exchange rates also rise; and when the value of the domestic currency falls, the exchange rates fall as well.</p>
+
+                    <p>Most Commonwealth countries such as the United Kingdom, Australia and New Zealand use indirect quotation. Exchange rates such as GBP/USD and AUD/USD are quoted indirectly.</p>
+
+                    <p>Direct Quotation Indirect Quotation</p>
+
+                    <span>USD/JPY = 134.56/61 EUR/USD = 0.8750/55</span>
+                    <br>
+
+                    <span>USD/HKD = 7.7940/50 GBP/USD = 1.4143/50</span>
+                    <br>
+
+                    <span>USD/CHF = 1.1580/90 AUD/USD = 0.5102/09</span>
+                    <br><br>
+
+                    </li>
+
+                    <li><strong>There are two implications for the above quotations:</strong>
+
+                    <br><br>
+
+                    <p>(1) Currency A/Currency B means the units of Currency B needed to exchange for 1 unit of Currency A.</p>
+
+                    <p>(2) Value A/Value B refers to the quoted buy price and sell price. Since the difference between the buy price and sell price is not large, only the last 2 digits of the sell price are shown. The two digits in front are the same as the buy price.</p>
+
+                    </li>
+
+                    <li><strong>Definition of “pip” in foreign exchange rates quotation</strong>
+
+                    <br><br>
+
+                    <p>Based on the market practice, foreign exchange rates quotation normally consists of 4 significant figures. Starting from right to left, the first digit, is known as the “pip”. The second digit is known as “10 pips”, so on and so forth.</p>
+
+                    <p>For example: 1 EUR = 1.1011 USD; 1 USD = JPY 120.55</p>
+
+                    <p>If EUR/USD changes from 1.1010 to 1.1015, we say that the EUR/USD has risen by 5 pips.</p>
+
+                    <p>If USD/JPY changes from 120.50 to 120.00, we say that USD/JPY has dropped by 50 pips.</p>
+
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

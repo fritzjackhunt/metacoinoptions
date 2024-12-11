@@ -1,0 +1,371 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Metacoin</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
+    {% load static %}
+
+    <!--<script type="text/javascript" src="/js/common.js"></script>-->
+
+    <script src="{% static 'js/jquerry.min.js' %}"></script>
+
+    <link href="{% static 'css/jqerry.simplyscroll.css' %}" rel="stylesheet">
+
+    <script src="{% static 'js/jqerry.simplyscroll.js' %}"></script>
+      <script type="text/javascript">
+      (function($) {
+        $(function() {
+          $("#scroller").simplyScroll({
+              auto: true,
+              autoMode: 'loop',
+            });
+        });
+      })(jQuery);
+    </script>
+
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'css/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/aos.css' %}" rel="stylesheet">
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/swiper-bundle.min.css' %}" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    
+    </head>
+    <body>
+
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="{% url 'homepage' %}">
+            <img src="{% static 'pictures/header4.png' %}" alt="" width="220" height="60">
+          </a>
+          
+          <button class="btn btn-primary d-block d-sm-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas1" aria-controls="offcanvasExample"><span class="navbar-toggler-icon"></button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" data-bs-toggle="dropdown">ECM</a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="{% url 'login' %}">Member Login</a></li>
+                <li><a class="dropdown-item" href="{% url 'ourteam' %}">Our Team</a></li>
+                <li><a class="dropdown-item" href="{% url 'awards' %}">Awards</a></li>
+                <li><a class="dropdown-item" href="{% url 'segregated' %}">Segregated Accounts</a></li>
+                <li><a class="dropdown-item" href="{% url 'disclosure' %}">Risk Disclosure</a></li>
+                <li><a class="dropdown-item" href="{% url 'terms' %}">Terms Of Bussiness</a></li>
+                <li><a class="dropdown-item" href="{% url 'policy' %}">Privacy Policy</a></li>
+                <li><a class="dropdown-item" href="{% url 'laundering' %}">Anti-money Laundering</a></li>
+                <li><a class="dropdown-item" href="{% url 'audit' %}">Audit Partner</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" data-bs-toggle="dropdown">Range Of Markets</a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="{% url 'forex' %}">Forex (Fx)</a></li>
+                <li><a class="dropdown-item" href="{% url 'cfd_shares' %}">CFD's On Shares</a></li>
+                <li><a class="dropdown-item" href="{% url 'cfd_indices' %}">CFD's On Commodities/Indices</a></li>
+                <li><a class="dropdown-item" href="{% url 'cfd_crypto' %}">CFD's On Cryptocurrencies</a></li>
+                <li><a class="dropdown-item" href="{% url 'trade_risk' %}">Trading And Execution Risks</a></li>
+                <li><a class="dropdown-item" href="{% url 'leverage' %}">Leverage</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" data-bs-toggle="dropdown">Platforms</a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="{% url 'bonus' %}">Bonus</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" data-bs-toggle="dropdown">Trading Markets</a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Open Live Account</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" data-bs-toggle="dropdown">Learn Forex</a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="{% url 'forex_essentials' %}">Forex Essentials</a></li>
+                <li><a class="dropdown-item" href="{% url 'exchange_rates' %}">Exchange Rates &amp; Quotations</a></li>
+                <li><a class="dropdown-item" href="{% url 'analysis' %}">Fundamental Analysis</a></li>
+                <li><a class="dropdown-item" href="{% url 'technical_analysis' %}">Technical Analysis</a></li>
+                </ul>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Customer Service</a></li>
+          </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas1">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title">MetaCoin Options</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="dropdown mt-3">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown">
+              ECM
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Member Login</a></li>
+              <li><a class="dropdown-item" href="{% url 'ourteam' %}">Our Team</a></li>
+              <li><a class="dropdown-item" href="{% url 'awards' %}">Awards</a></li>
+              <li><a class="dropdown-item" href="{% url 'segregated' %}">Segregated Accounts</a></li>
+              <li><a class="dropdown-item" href="{% url 'disclosure' %}">Risk Disclosure</a></li>
+              <li><a class="dropdown-item" href="{% url 'terms' %}">Terms Of Bussiness</a></li>
+              <li><a class="dropdown-item" href="{% url 'policy' %}">Privacy Policy</a></li>
+              <li><a class="dropdown-item" href="{% url 'laundering' %}">Anti-money Laundering</a></li>
+              <li><a class="dropdown-item" href="{% url 'audit' %}">Audit Partner</a></li>
+            </ul>
+          </div>
+
+          <div class="dropdown mt-3">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown">
+              Range Of Markets
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+              <li><a class="dropdown-item" href="{% url 'forex' %}">Forex (Fx)</a></li>
+                <li><a class="dropdown-item" href="{% url 'cfd_shares' %}">CFD's On Shares</a></li>
+                <li><a class="dropdown-item" href="{% url 'cfd_indices' %}">CFD's On Commodities/Indices</a></li>
+                <li><a class="dropdown-item" href="{% url 'cfd_crypto' %}">CFD's On Cryptocurrencies</a></li>
+                <li><a class="dropdown-item" href="{% url 'trade_risk' %}">Trading And Execution Risks</a></li>
+                <li><a class="dropdown-item" href="{% url 'leverage' %}">Leverage</a></li>
+            </ul>
+          </div>
+
+          <div class="dropdown mt-3">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown">
+              Platforms
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+              <li><a class="dropdown-item" href="{% url 'bonus' %}">Bonus</a></li>
+            </ul>
+          </div>
+
+          <div class="dropdown mt-3">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown">
+              Trading Markets
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+              <li><a class="dropdown-item" href="#">Open Live Account</a></li>
+            </ul>
+          </div>
+
+          <div class="dropdown mt-3">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton5" data-bs-toggle="dropdown">
+              Learn Forex
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+              <li><a class="dropdown-item" href="{% url 'forex_essentials' %}">Forex Essentials</a></li>
+                <li><a class="dropdown-item" href="{% url 'exchange_rates' %}">Exchange Rates &amp; Quotations</a></li>
+                <li><a class="dropdown-item" href="{% url 'analysis' %}">Fundamental Analysis</a></li>
+                <li><a class="dropdown-item" href="{% url 'technical_analysis' %}">Technical Analysis</a></li>
+            </ul>
+          </div>
+
+          <div class="dropdown mt-3">
+            <a class="btn btn-primary" type="button" href="{% url 'contact' %}">Customer Service</a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="mgm" style="display:none; opacity:1;">
+        <div class="txt" style="color:black;">Someone from <b></b>just traded with <a href="javascript:void(0);" onclick="javascript:void(0);"></a></div>
+      </div>
+
+      <style>
+        .mgm {
+          border-radius: 7px;
+          position: fixed;
+          z-index: 1;
+          bottom: 80px;
+          right: 50px;
+          background: #fff;
+          padding: 10px 27px;
+          box-shadow: 0px 5px 13px 0px rgba(0,0,0,.3);
+        }
+        .mgm a {
+          font-weight: 700;
+          display: block;
+          color:#f2d516;
+        }
+        .mgm a, .mgm a:active {
+          transition: all .2s ease;
+          color:#f2d516;
+        }
+      </style>
+
+      <script type="text/javascript">
+        
+        var listCountries = ['South Africa', 'USA', 'Germany', 'France', 'Italy', 'South Africa', 'Australia', 'South Africa', 'Canada', 'Argentina', 'Saudi Arabia', 'Mexico', 'South Africa', 'South Africa', 'Venezuela', 'South Africa', 'Sweden', 'South Africa', 'South Africa', 'Italy', 'South Africa', 'United Kingdom', 'South Africa', 'Greece', 'Cuba', 'South Africa', 'Portugal', 'Austria', 'South Africa', 'Panama', 'South Africa', 'South Africa', 'Netherlands', 'Switzerland', 'Belgium', 'Israel', 'Cyprus'];
+
+        var listPlans = ['$500','$1500','$1000','$10,000','$2000','$3000','$4000', '$600', '$700', '$2500'];
+
+        interval = Math.floor(Math.random() * (40000 - 8000 + 1) + 8000);
+        var run = setInterval(request, interval);
+
+          
+        function request() {
+              clearInterval(run);
+              interval = Math.floor(Math.random() * (40000 - 8000 + 1) + 8000);
+              var country = listCountries[Math.floor(Math.random() * listCountries.length)];
+              var plan = listPlans[Math.floor(Math.random() * listPlans.length)];
+              var msg = 'Someone from <b>' + country + '</b> just traded with <a href="javascript:void(0);" onclick="javascript:void(0);">' + plan + ' .</a>';
+              $(".mgm .txt").html(msg);
+              $(".mgm").stop(true).fadeIn(300);
+              window.setTimeout(function() {
+                  $(".mgm").stop(true).fadeOut(300);
+              }, 6000);
+              run = setInterval(request, interval);		
+          }
+      </script>
+
+        
+
+{% block content %}
+
+{% endblock %}
+  <!--Start following a trading master STARTS-->
+<section id="section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-12 d-none d-sm-block">
+                <img src="{% static 'pictures/awards.jpg' %}" class="d-block w-100" alt="...">
+            </div>
+            <div class="col-lg-12 col-12 d-block d-sm-none">
+                <img src="{% static 'pictures/awards-mobile.jpg' %}" class="d-block w-100 d-block d-sm-none" alt="...">
+            </div>
+        </div>
+    </div>
+</section>
+<!--Start following a trading master ENDS-->
+
+<!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="cus-col col-md-6 footer-links d-none d-sm-block">
+            <h4>Meta Coin Options</h4>
+            <ul>
+              <li><a href="{% url 'ourteam' %}">Our Team</a></li>
+              <li><a href="{% url 'awards' %}">Awards</a></li>
+              <li><a href="{% url 'segregated' %}">Segregated Accounts</a></li>
+              <li><a href="{% url 'disclosure' %}">Risk Disclosure</a></li>
+              <li><a href="{% url 'terms' %}">Terms Of Bussiness</a></li>
+              <li><a href="{% url 'policy' %}">Privacy Policy</a></li>
+              <li><a href="{% url 'laundering' %}">Anti-money Laundering</a></li>
+              <li><a href="{% url 'audit' %}">Audit Partner</a></li>
+            </ul>
+          </div>
+
+          <div class="cus-col col-md-6 footer-links d-none d-sm-block">
+            <h4>Range Of Markets</h4>
+            <ul>
+              <li><a href="{% url 'forex' %}">Forex (Fx)</a></li>
+              <li><a href="{% url 'precious_metals' %}">Precious Metals</a></li>
+              <li><a href="{% url 'cfd_shares' %}">CFD's On Stock</a></li>
+              <li><a href="{% url 'cfd_indices' %}">CFD's on Commodities/Indices</a></li>
+              <li><a href="{% url 'cfd_crypto' %}">CFD's On Cryptocurrencies</a></li>
+              <li><a href="{% url 'trade_risk' %}">Trading And Execution Risks</a></li>
+              <li><a href="{% url 'leverage' %}">Leverage</a></li>
+            </ul>
+          </div>
+
+          <div class="cus-col col-md-6 footer-links d-none d-sm-block">
+            <h4>Platforms</h4>
+            <ul>
+              <li><a href="{% url 'bonus' %}">Bonus</a></li>
+            </ul>
+          </div>
+
+          <div class="cus-col col-md-6 footer-links d-none d-sm-block">
+            <h4>Trading Accounts</h4>
+            <ul>
+              <li><a href="#">Open Live Account</a></li>
+            </ul>
+          </div>
+
+          <div class="cus-col col-md-6 footer-links d-none d-sm-block">
+            <h4>Learn Forex</h4>
+            <ul>
+              <li><a href="{% url 'forex_essentials' %}">Forex Essentials</a></li>
+              <li><a href="{% url 'exchange_rates' %}">Exchange rates &amp; Quotation</a></li>
+              <li><a href="{% url 'analysis' %}">Fundamental Analysis</a></li>
+              <li><a href="{% url 'technical_analysis' %}">Technical Analysis</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-12 col-md-6 footer-contact text-center">
+            <br>
+            <h4>Risk Warning:</h4>
+            <p>
+              Meta Coin Options Group Limited, regulated by Belize, with registration no. IBC 9103223. Email: [info@metacoinoptions.com]
+            </p>
+
+            <p>Meta Coin Options Group Ltd is is an international multi-assets registered brokerage firm. Meta Coin Options offer clients to trade on Forex and Precious Metals with high interbank liquidity conditions, robust order execution in split second, ultra-tight spreads and many other advantages on MT4. With the segregated fund security under top tier banks, Meta Coin Options is dedicated to ensuring traders around the world trade on more Meta Coin Options opportunities anytime, anywhere!</p>
+
+            <p>Risk Warning: Trading foreign exchange, commodity futures, options, precious metals and other over-the-counter or on-exchange products and Contracts for Difference (CFDs) carries a high level of risk and may not be suitable for all investors. Leverage creates additional risk and loss exposure. Before you decide to trade foreign exchange, carefully consider your investment objectives, experience level, and risk tolerance. You could lose some or all of your initial investment; do not invest money that you cannot afford to lose. Educate yourself on the risks associated with foreign exchange trading, and seek advice from an independent financial or tax advisor if you have any questions.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+
+  <div id="we-accept">
+    <div class="container d-flex justify-content-center text-center">
+        <div class="we-accept col-lg-10">
+            <h4>We Accept</h4>
+            <br>
+            <img class="we-accept" src="{% static 'pictures/WeAcceptNew1.png' %}" alt="">
+            <br><br>
+            <span>&copy; 2011 - 2021 ALL right reserved</span>
+        </div>
+    </div>
+  </div>
+
+
+        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="fa fa-arrow-up"></i></a>
+
+        <!-- Vendor JS Files -->
+        <script src="{% static 'js/aos.js' %}"></script>
+        <script src="{% static 'js/glightbox.min.js' %}"></script>
+        <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+        <script src="{% static 'js/swiper-bundle.min.js' %}"></script>
+        <script src="{% static 'js/purecounter.js' %}" type="application/javascript"></script>
+        
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+
+        <!-- Template Main JS File -->
+        <script src="{% static 'js/main.js' %}"></script>
+    </body>
+</html>
