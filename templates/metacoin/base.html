@@ -2,11 +2,11 @@
 
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Metacoin</title>
+    <title>Bullhub Capitals</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -52,14 +52,26 @@
 
     <!-- Template Main CSS File -->
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+    <!-- Smartsupp Live Chat script -->
+    <script type="text/javascript">
+      var _smartsupp = _smartsupp || {};
+      _smartsupp.key = '81f6c2a201e5c30534bb2cfa169d804f5b3614cc';
+      window.smartsupp||(function(d) {
+        var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+        s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+        c.type='text/javascript';c.charset='utf-8';c.async=true;
+        c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+      })(document);
+    </script>
     
-    </head>
+  </head>
     <body>
 
       <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="{% url 'homepage' %}">
-            <img src="{% static 'pictures/header4.png' %}" alt="" width="220" height="60">
+          <a class="navbar-brand" id="navbar-brand-title" href="{% url 'homepage' %}">
+            Bullhub Capitals
           </a>
           
           <button class="btn btn-primary d-block d-sm-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas1" aria-controls="offcanvasExample"><span class="navbar-toggler-icon"></button>
